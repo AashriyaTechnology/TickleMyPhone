@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.jalsalabs.ticklemyphonefull">
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.BROADCAST_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <application android:icon="@drawable/icon" android:label="Tickle my Phone">
+        <activity android:label="Tickle my Phone" android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:name=".AntiTheftBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".TB_BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jalsalabs.ticklemyphonefull.TB_AlarmManagerBroadcastReceiver" />
+        <receiver android:enabled="true" android:name="com.jalsalabs.ticklemyphonefull.SmsReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.jalsalabs.ticklemyphonefull.OutgoingCallReceiver4455">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.jalsalabs.ticklemyphonefull.AutomaticAnswerReceiverTML">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="Tickle my Phone" android:name=".MainMenu" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".PasswordAccept" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".ActivateFreeToFull" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SMS" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".StartVibrate" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".MyAlarmService" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".TB_SetupTAB" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".TB_AlarmManagerActivity" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AntiTheftBootStartActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <service android:name="com.jalsalabs.ticklemyphonefull.MyAlarmService" />
+        <activity android:label="Tickle my Phone" android:name=".PlayDefaultRingTone" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SMSRulesSetup" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".ScheduleTasksService" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".HelpSelfService" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AutoAnswerReadMe" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AutoAnswerSetupTAB" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".AutoAnswerAllowDisallow" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".AutoAnswerSettings" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AntiTheftAlertTab" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SimChangeSetupBackup" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AntiTheftReadme" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AntiTheftSIM" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AntiTheftContact" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AntiTheftActionNOTREQUIRED" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AntiTheftAction" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AntiTheftSaveEnable" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".SetNetworkData" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SetBlueTooth" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".AddContact" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".FirstTimeGetInstalledApps" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".AndroidGPS" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".Activation" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".StartVibrateNSeconds" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SaveToFile" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".SendCallLogDetails" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".GetFileFromSDCard" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SetWifi" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SetGPS" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".GetInstalledApplication" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SendSDCardDirectoryList" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SendContactDetails" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SendAllSMSDetails" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SendSMSReport" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SendCallLogReport" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SendBrowserHistory" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        "
+        --
+        "		<activity android:label="Tickle my Phone" android:name=".ShowPopOutMessage" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name="SendSMSAcknowledge" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".Monitor" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".AudioRecordNow" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".Monitor2" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name="CallBackNumber" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".GetGEOPosition" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".CallBackNumberSpeakerOn" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".CallUserNumber" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".AllowDisallow" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".CallUserNumberSpeakerOn" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".VideoRecorder" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SMSManageRulesTab" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".NewRulesMenu" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name="SendLiveVideo" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SMSRulesReadme" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name="TakePictureSendEmail" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".HelpAbout" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name="TakePicture" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".HelpTab" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".Help" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".Free2Paid" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".SrinathGEO" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SrinathGEO2" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SendMobileInfo" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".GetScreenShot" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".SetCalendarEvent" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".TakePictureSaveSDCard" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="Tickle my Phone" android:name=".SendResult" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".PlaySDCardFile" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".RulesMenu" android:screenOrientation="portrait" />
+        <activity android:label="Tickle my Phone" android:name=".SMSDynamicRules" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog" />
+        <activity android:label="Tickle my Phone" android:name="com.jalsalabs.ticklemyphonefull.SendHelpSMS" android:screenOrientation="portrait" />
+        <service android:name="com.jalsalabs.ticklemyphonefull.AutomaticAnswerIntentServiceTML" />
+    </application>
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="left" android:id="@id/save" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Do you wish to enable TIME BOMB Functionaltity" android:layout_weight="0.5" />
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="left" android:id="@id/save" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="TIME BOMB  functionality  is " android:layout_weight="0.9" />
+			<ImageView android:id="@id/iv_timebombactive" android:tag="off" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/off_btn" android:layout_weight="0.2" />
+		</LinearLayout>
+		<TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="left" android:id="@id/save" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Everyday @ what time you want to set the time bomb?" android:layout_weight="0.5" />
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="TIME" android:layout_weight="0.3" />
+			<EditText android:id="@id/et_timebombtime" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="9:30" android:editable="true" android:layout_weight="0.55" />
+			<Button android:id="@id/bt_timepick" android:background="@drawable/clock" android:layout_width="0.0dip" android:layout_height="fill_parent" android:editable="false" android:layout_weight="0.15" />
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Email to send" android:layout_weight="0.3" android:inputType="textEmailAddress" />
+			<EditText android:id="@id/et_timebombemail" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="youremail@emial.com" android:layout_weight="0.7" />
+		</LinearLayout>
+		<TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="left" android:id="@id/save" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="What do you want to send?" android:layout_weight="0.5" />
+		<CheckBox android:id="@id/cb_allsmsinbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="ALL SMS IN INBOX" />
+		<CheckBox android:id="@id/cb_allsmssent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="ALL SENT SMS" />
+		<CheckBox android:id="@id/cb_allincomingcall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="ALL INCOMING CALL LOG" />
+		<CheckBox android:id="@id/cb_alloutgoingcall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="ALL OUTGOING CALL LOG" />
+		<CheckBox android:id="@id/cb_allmissedcall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="ALL MISSED CALL LOG" />
+		<Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/White" android:gravity="center|left" android:layout_gravity="center" android:id="@id/BT_sendsampleemail" android:background="@drawable/buttonblue" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="   Send me Sample Email NOW!" android:drawableLeft="@drawable/sendsampleemail" android:layout_weight="0.16" />
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<Button android:textSize="20.0sp" android:gravity="center" android:id="@id/bt_save" android:background="@drawable/buttongreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alw_save" android:layout_weight="0.5" style="@style/ButtonText" />
+			<Button android:textSize="20.0sp" android:gravity="center" android:id="@id/bt_cancel" android:background="@drawable/buttonred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MM_Close" android:layout_weight="0.5" style="@style/ButtonText" />
+		</LinearLayout>
+		<Button android:id="@id/btStart" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="start" />
+		<Button android:id="@id/btCancel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cancel" />
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent">"\u0009>
+"		<TextView android:textSize="20.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phone Steal/Lost settings" android:height="50.0dip" />
+		<TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/readme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+		<TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/siminfo_header" android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Your SIM Registration information" android:width="320.0dip" android:layout_below="@id/buttons_layout" />
+		<TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/siminfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+		<Button android:enabled="false" android:layout_gravity="center" android:id="@id/registerthissim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Register this new SIM now" android:width="310.0px" />
+		<TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/action_header" android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Secondary Phone Details " android:width="320.0dip" android:layout_below="@id/buttons_layout" />
+		<TextView android:id="@id/TextView02" android:text="Secondary Phone number including country code. Please do not enter your current phone number! Give your Spuase or someone close." android:width="100.0px" />
+		<EditText android:id="@id/ET_second_phone" android:hint="+14171234456" android:height="1.0px" android:width="1.0px" android:singleLine="true" />
+		<TextView android:id="@id/TextView02" android:text="Your Email id" android:width="100.0px" />
+		<EditText android:id="@id/ET_second_email" android:hint="youremail@gmail.com" android:height="1.0px" android:width="1.0px" android:singleLine="true" />
+		<TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/action_header" android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Action upon Reboot of phone" android:width="320.0dip" android:layout_below="@id/buttons_layout" />
+		<TableRow android:id="@id/TableRow00">
+			<CheckBox android:textColor="@color/black" android:id="@id/showmessagestolen" android:layout_width="wrap_content" android:layout_height="50.0dip" android:checked="true" />
+			<TextView android:id="@id/TextView01" android:layout_height="100.0dip" android:text="Show the message as soon as culprit change the SIM and switch on the Phone.  Press the > button to cofigure your message." android:width="220.0dip" />
+			<Button android:id="@id/show_config_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=">" />
+		</TableRow>
+		<TextView android:id="@id/smallgap" android:text="" android:height="30.0px" />
+		<TableRow android:id="@id/TableRow00">
+			<CheckBox android:textColor="@color/black" android:id="@id/bigalaramstolen" android:layout_width="wrap_content" android:layout_height="50.0dip" android:checked="true" />
+			<TextView android:id="@id/TextView01" android:layout_height="80.0dip" android:text="Play Big Buzzing sound for 20 seconds when the culprit change the SIM and switch it on" android:width="220.0dip" />
+		</TableRow>
+		<TextView android:id="@id/smallgap" android:text="" android:height="30.0px" />
+		<TableRow android:id="@id/TableRow00">
+			<CheckBox android:textColor="@color/black" android:id="@id/sendsmswhenstolen" android:layout_width="wrap_content" android:layout_height="50.0dip" android:checked="true" />
+			<TextView android:id="@id/TextView01" android:layout_height="230.0dip" android:text="Send SMS\n\nSample SMS: You phone currently with unknown person and his/her \nContact no is :+XXXXXXXX\nSIM Srl no : XXXXXXXXXXXX\nService Provider:XXXXXX\nCountry : XX\nNow you can contact culprit  or send Tickle my Phone commands" android:width="220.0dip" />
+		</TableRow>
+		<TextView android:id="@id/smallgap" android:text="" android:height="30.0px" />
+		<TableRow android:id="@id/TableRow00">
+			<CheckBox android:textColor="@color/black" android:id="@id/sendemailwhenstolen" android:layout_width="wrap_content" android:layout_height="30.0dip" android:checked="true" />
+			<TextView android:id="@id/TextView01" android:layout_height="130.0dip" android:text="Send Email\n\nEmail will contain your Lost phone's Geo location, Complete call log details and other Phone profile informations" android:width="200.0dip" />
+		</TableRow>
+		<TextView android:id="@id/smallgap" android:text="" android:height="30.0px" />
+		<TextView android:id="@id/TextView01" android:text="" android:width="100.0px" />
+		<Button android:id="@id/BT_Save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save and Enable" />
+		<Button android:id="@id/BT_Cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Close" android:width="100.0px" />
+		<TextView android:textSize="11.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txtSize2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copyright(c) 2010-12 Jalsa Labs. All rights reserved." android:height="20.0dip" />
+	</TableLayout>
+</ScrollView>

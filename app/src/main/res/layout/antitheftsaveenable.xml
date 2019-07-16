@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent">"\u0009>
+"		<TextView android:textSize="20.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Please save your changes" />
+		<TextView android:id="@id/smallgap" android:text="\nNOTE: If you have already registered a SIM and would like to change the SIM.  You need to disable the Antitheft features by unchecking below checkbox.  Change the SIM and Check the functionality" android:height="150.0px" />
+		<TableRow android:id="@id/TableRow00">
+			<CheckBox android:textColor="@color/black" android:id="@id/CK_simchangealert" android:layout_width="wrap_content" android:layout_height="50.0dip" android:checked="true" />
+			<TextView android:id="@id/TextView01" android:text="Enable anithi theft / SIM Change alert" android:width="220.0dip" />
+		</TableRow>
+		<TextView android:id="@id/smallgap" android:text="" android:height="30.0px" />
+		<TextView android:id="@id/smallgap" android:text="" android:height="30.0px" />
+		<Button android:id="@id/AntiTheftSave" android:background="@drawable/buttongreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save" style="@style/ButtonText" />
+		<Button android:id="@id/BT_close" android:background="@drawable/buttonred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Close" style="@style/ButtonText" />
+	</TableLayout>
+</ScrollView>

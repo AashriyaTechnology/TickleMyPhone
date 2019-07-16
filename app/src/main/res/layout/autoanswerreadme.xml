@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent">"\u0009>
+"		<TextView android:textSize="20.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Auto Answer Settings" />
+		<TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/readme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+	</TableLayout>
+</ScrollView>

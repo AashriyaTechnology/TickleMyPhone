@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Settings">
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Enable Auto Answer" android:key="enableautoanswer" android:summary="Enable answering  calls automatically.  " android:defaultValue="false" />
+		<Preference android:title="Allow and disallow numbers" android:key="autoansweallow" android:summary="Click here to configure Allow and Disallow number&gt;" />
+		<EditTextPreference android:name="AddAutoAnswer" android:hint="SMS Command eg. ADDAUTOANSWER" android:title="SMS Command" android:key="addautoanswercmd" android:summary="SMS Command to Add sender phone no automatically to Allow/Disallow " android:defaultValue="ADDAUTOANSWER" />
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Auto on the Speaker phone" android:key="autoanswespeaker" android:summary="Automatically switch on the speaker phone ON" android:defaultValue="false" />
+	</PreferenceCategory>
+</PreferenceScreen>

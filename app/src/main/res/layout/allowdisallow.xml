@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/keyword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/alw_allow_dis" />
+			<RadioGroup android:orientation="vertical" android:id="@id/QueGroup1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<RadioButton android:textColor="@color/white" android:id="@id/allow" android:layout_height="32.0dip" android:checked="true" android:text="@string/alw_only" />
+				<RadioButton android:textColor="@color/white" android:id="@id/disallow" android:layout_height="32.0dip" android:checked="false" android:text="@string/alw_dissallow" />
+			</RadioGroup>
+			<TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/keyword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/alw_use_comma" />
+			<EditText android:gravity="top" android:id="@id/ET_AllowDisallow" android:hint="@string/alw_data_hint" android:height="100.0px" android:width="200.0px" android:singleLine="false" android:editable="true" />
+			<TableRow android:id="@id/TableRow01">
+				<Button android:id="@id/save" android:background="@drawable/buttongreen" android:layout_width="120.0px" android:layout_height="55.0px" android:text="@string/alw_save" style="@style/ButtonText" />
+				<Button android:id="@id/cancel" android:background="@drawable/buttonred" android:layout_width="120.0px" android:layout_height="55.0px" android:text="@string/act_cancel" style="@style/ButtonText" />
+			</TableRow>
+		</TableLayout>
+	</ScrollView>
+</LinearLayout>

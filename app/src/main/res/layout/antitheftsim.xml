@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent">"\u0009>
+"		<TextView android:textSize="20.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SIM Info Registration" android:height="50.0dip" />
+		<TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/action_header" android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="SIM Registered with Tickle my Phone" android:width="320.0dip" android:layout_below="@id/buttons_layout" />
+		<TableRow android:id="@id/TableRow00">
+			<TextView android:textColor="@color/white" android:id="@id/TextView01" android:layout_column="1" android:text="SIM" />
+			<EditText android:textSize="12.0dip" android:id="@id/regsimno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="220.0dip" />
+		</TableRow>
+		<TableRow android:id="@id/TableRow00">
+			<TextView android:textColor="@color/white" android:id="@id/TextView01" android:layout_column="1" android:text="SIM Operator" />
+			<EditText android:textSize="12.0dip" android:id="@id/regsimprovider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="220.0dip" />
+		</TableRow>
+		<TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/action_header" android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Currently inserted SIM info" android:width="320.0dip" android:layout_below="@id/buttons_layout" />
+		<TableRow android:id="@id/TableRow00">
+			<TextView android:textColor="@color/white" android:id="@id/TextView01" android:layout_column="1" android:text="SIM" />
+			<EditText android:textSize="12.0dip" android:id="@id/currentsimno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="220.0dip" android:editable="false" />
+		</TableRow>
+		<TableRow android:id="@id/TableRow00">
+			<TextView android:textColor="@color/white" android:id="@id/TextView01" android:layout_column="1" android:text="SIM Operator" />
+			<EditText android:textSize="12.0dip" android:id="@id/currentsimprovider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="220.0dip" android:editable="false" />
+		</TableRow>
+		<TextView android:id="@id/smallgap" android:text="" android:height="30.0px" />
+		<TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/is_same_diffrent" android:background="@color/lightgreen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Same or Different to show here" android:width="320.0dip" android:layout_below="@id/buttons_layout" />
+		<TextView android:id="@id/smallgap" android:text="" android:height="30.0px" />
+		<Button android:id="@id/BT_Register" android:background="@drawable/buttongreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Register Now" style="@style/ButtonText" />
+		<Button android:id="@id/clear" android:background="@drawable/buttonred" android:layout_width="wrap_content" android:text="Clear Previously Registered SIM" android:width="300.0sp" android:drawableLeft="@drawable/eraser" style="@style/ButtonText" />
+	</TableLayout>
+</ScrollView>

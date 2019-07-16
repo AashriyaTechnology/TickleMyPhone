@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<WebView android:id="@id/wv_notice" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<Button android:gravity="center" android:id="@id/but_decline" android:background="@drawable/buttonred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I Decline" android:layout_weight="0.5" style="@style/ButtonText" />
+			<Button android:gravity="center" android:id="@id/but_accept" android:background="@drawable/buttongreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I Accept" android:layout_weight="0.5" style="@style/ButtonText" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

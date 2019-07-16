@@ -1,0 +1,404 @@
+<resources>
+    <string name="app_name">Tickle my Phone</string>
+
+    <string name="abt_srinathrao">"Ideator        : Jalsa Team"</string>
+    <string name="abt_smaran">"Developer     : Smaran "</string>
+    <string name="abt_shashank">"Tester            : Shashank"</string>
+    <string name="app_name">Tickle my Phone(True Remote)</string>
+    <string name="selected_item">Not_selected_any</string>
+    <string name="package_str">com.jalsalabs.ticklemyphonefull</string>
+    <string name="hello">Hello, Smaran is Idiot!</string>
+    <string name="no_info">Sorry no information available!</string>
+    <string name="Advanced">Advanced</string>
+    <string name="user">ticklemyphonemedia@gmail.com</string>
+    <string name="pwd">tml12345</string>
+    <string name="MM_Manage_Rules">Manage Rules</string>
+    <string name="MM_Activate">Activate</string>
+    <string name="MM_Manage_Sender">Manage Sender</string>
+    <string name="MM_LOG_Details">Monitor Log Details</string>
+    <string name="MM_Help">User Manual</string>
+    <string name="MM_About">About</string>
+    <string name="MM_Exit">Exit</string>
+    <string name="MM_HelpSelfService">Not working!!! Help Me!</string>
+    <string name="MM_Close">Close</string>
+    <string name="MM_Rate">Please Rate our application</string>
+    <string name="rm_callback">Call Back</string>
+    <string name="rm_callback_spk">Call Back Speaker ON</string>
+    <string name="rm_vibrate">Vibrate</string>
+    <string name="rm_vibrate_nsec">Vibrate N Seconds</string>
+    <string name="rm_popp">Popup Settings</string>
+    <string name="rm_play_ringtone">Play Default Ringtone</string>
+    <string name="rm_sms_acknowledge">SMS Acknowledgement</string>
+    <string name="rm_call_fwd">Call Number</string>
+    <string name="rm_call_fwd_spk">Call Number speaker on</string>
+    <string name="rm_whereareyou">Where Are You</string>
+    <string name="rm_takepicksend">Take Live Picture and send image</string>
+    <string name="rm_takevideosend">Record Live video and send video footage</string>
+    <string name="rm_help">Send Help message to sender</string>
+    <string name="rm_getsms">Send all SMS text</string>
+    <string name="rm_installlist">Send Installed and Running Application list</string>
+    <string name="rm_setgps">GPS Settings</string>
+    <string name="rm_setwifi">Wifi Settings</string>
+    <string name="rm_getdir">Send Directory (File) Listing of SD Card</string>
+    <string name="rm_getfile">Send File from SD Card</string>
+    <string name="rm_playfile">Play MP3 file from SD Card</string>
+    <string name="rm_networkdata">Network Data Settings</string>
+    <string name="rm_add_contacts">Add friend Contact info</string>
+    <string name="rm_bluetooth">Bluetooth Settings</string>
+    <string name="rm_smsreport">Send SMS detailed report</string>
+    <string name="rm_callreport">Send Call logs detailed report</string>
+    <string name="rm_mobileinfo">Send Mobile info</string>
+    <string name="rm_send_miss_call">Send Call Log Details</string>
+    <string name="rm_takephoto">Take photo</string>
+    <string name="rm_saveaudio">Record Live audio and save in SD Card</string>
+    <string name="rm_saveaudionsec">Record Live audio and save in SD Card for N Seconds</string>
+    <string name="rm_sendaudio">Record Live Audio Send attachment</string>
+    <string name="rm_buzzmobile">Buzz my Mobile</string>
+    <string name="rm_calevent">Create Calendar event</string>
+    <string name="rm_sendcontactlists">Send Contact details</string>
+    <string name="rl0_title">Call Back</string>
+    <string name="rl0_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl0_then">Then Call Back the sender automatically</string>
+    <string name="r_eg">"Example
+ SMS :    "</string>
+    <string name="rl0_ex">"
+ Result :
+ Tickle my Phone will Call back the SMS sender immediately!"</string>
+    <string name="rl1_title">Call back with Speaker ON</string>
+    <string name="rl1_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl1_then">"
+
+Then Call Back the sender automatically and set Speaker ON in my phone"</string>
+    <string name="rl1_ex">"
+ Result :
+ Tickle my Phone will Call back the SMS sender immediately and put the speaker on in my phone."</string>
+    <string name="rl2_title">Vibrate</string>
+    <string name="rl2_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl2_then">Then Vibrate my phone for 10 seconds</string>
+    <string name="rl2_ex">"
+ Result :
+ Tickle my Phone will Vibrate the mobile for 10 seconds"</string>
+    <string name="rl3_title">Vibrate N Seconds</string>
+    <string name="rl3_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl3_then">Then Vibrate my phone for N seconds</string>
+    <string name="rl3_ex">" 30
+Result :
+ Tickle my Phone will vibrate the mobile for 30 seconds"</string>
+    <string name="rl4_title">Popup Settings</string>
+    <string name="rl4_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl4_then">Then Show the message in a popout window</string>
+    <string name="rl4_ex">"
+ Result : Tickle my Phone Popout message shown."</string>
+    <string name="rl5_title">Play Default Ringtone</string>
+    <string name="rl5_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl5_then">Then Play my default Ringtone</string>
+    <string name="rl5_ex">"
+ Result :
+ Tickle my Phone will Play the current Ringtone for the received SMS"</string>
+    <string name="rl6_title">SMS Acknowledgement</string>
+    <string name="rl6_ack">Acknowledgement Message</string>
+    <string name="rl6_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl6_then">Then Send the acknowledgement message back to the sender</string>
+    <string name="rl6_ex">"
+ Result :
+ Tickle my Phone will Reply acknowledgement message to the sender."</string>
+    <string name="rl7_title">Call Number</string>
+    <string name="rl7_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl7_then">Then Call the number specified in the SMS</string>
+    <string name="rl7_ex">"  +14081234567
+ Result :
+ Tickle my Phone will Call the number +14081234567 automatically"</string>
+    <string name="rl8_title">Call Number with Speaker ON</string>
+    <string name="rl8_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl8_then">Then Call the number specified in the SMS and enable the Speaker</string>
+    <string name="rl8_ex">"  +14081234567
+ Result :
+ Tickle my Phone will Call the number +14081234567 with Speaker on."</string>
+    <string name="rl9_title">Where are you</string>
+    <string name="rl9_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl9_then">Then Send the GEO Location and the Google maps link to the sender as SMS</string>
+    <string name="rl9_ex">"
+ Result :
+ Tickle my Phone will send SMS to Sender with real time Longitude and Latitude with the Google map link."</string>
+    <string name="rl10_title">Take Picture and save to SD Card</string>
+    <string name="rl10_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl10_then">Then Tickle my Phone will take the Live picture and save the image in the SD Card. Tickle my Phone will also send the File details to the sender.</string>
+    <string name="rl10_ex">"
+ Result :
+ Tickle my Phone will take the live photo image and save the image file in the SD Card. Tickle my Phone will also send the image File and the Folder location in SD Card as a SMS back to the sender"</string>
+    <string name="rl11_title">Take Live Picture and send image</string>
+    <string name="rl11_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl11_then">Then Take the Live picture and send image as an attachment to Email specified in the SMS</string>
+    <string name="rl11_ex">"  youremail@gmail.com
+ Result :
+ Tickle my Phone will take the Live Image from the camera and send the image as an attachment to email youremail@gmail.com. Tickle my Phone will also send the confirmation message to the sender"</string>
+    <string name="rl12_title">Record Live video and send video footage</string>
+    <string name="rl12_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl12_then">Then Record the Live video and send video file as an attachment to to Email specified in SMS</string>
+    <string name="rl12_ex">"  youremail@gmail.com
+ Result :
+ Tickle my Phone will record the live Video for 20 seconds and send the video file as an attachment to email youremail@gmail.com."</string>
+    <string name="rl13_title">Record Live Audio save in SD Card</string>
+    <string name="rl13_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl13_then">Then Show the message in a pop out window</string>
+    <string name="rl13_ex">"
+ Result :
+ Tickle my Phone will record the live Audio for 30 seconds and save the audio file in SD Card. Tickle my Phone will also send the confirmation SMS to the sender"</string>
+    <string name="rl14_title">Record Live Audio for N seconds and save in SD Card</string>
+    <string name="rl14_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl14_then">Then Record the Live audio for N seconds specified in the SMS and save audio file in SD Card. Soon after recording completed , Tickle my Phone will also send the confirmation SMS to the sender with the File details</string>
+    <string name="rl14_ex">"  180
+ Result :
+ Tickle my Phone will record the live Audio for 180 seconds (3 mins) and save the audio file in SD Card. Tickle my Phone will also send the confirmation SMS with the file details to the sender"</string>
+    <string name="rl15_title">Record Live Audio send attachment</string>
+    <string name="rl15_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl15_then">Then Record the Live Audio for 30 seconds and send the email with the audio file as attachment. Tickle my Phone will also send the confirmation SMS to the sender</string>
+    <string name="rl15_ex">"  youremail@gmail.com
+ Result :
+ Tickle my Phone will record the live Audio for 30 seconds and send the Audio file as an attachment to email youremail@gmail.com. Tickle my Phone will also send the confirmation SMS to the sender"</string>
+    <string name="rl16_title_notused">Send Result for given Code</string>
+    <string name="rl16_invalid_notused">SMS Response message for Invalid code</string>
+    <string name="rl16_fileinfo_notused">Please keep comma(,) separated file tmlresult.csv in SDCARD folder. Should have two columns Code and Response. Tickle my Phone will send the Response column for the valid Code.</string>
+    <string name="rl16_avl_notused">Available</string>
+    <string name="rl16_notavl_notused">NOT Available</string>
+    <string name="rl16_invl_code_notused">Invalid code!! Please send the valid code.</string>
+    <string name="rl16_title">Set GPS Settings</string>
+    <string name="rl16_when">"
+ When this phone receives Text message (SMS) with the starting word as"</string>
+    <string name="rl16_then">Then Tickle my Phone set the GPS settings on / off</string>
+    <string name="rl16_ex">"  1
+ Result :
+Tickle my Phone will set the GPS settings to On.
+ SETGPS 0 is to set the GPS settings to OFF"</string>
+    <string name="wifititle">Set WiFi Settings</string>
+    <string name="wifi_when">"
+ When this phone receives Text message (SMS) with the starting word as"</string>
+    <string name="wifi_then">Then Tickle my Phone set the WiFi settings on / off</string>
+    <string name="wifi_ex">"  1
+ Result :
+Tickle my Phone will set the WiFi settings to On.
+ SETWIFI 0 is to set the WiFi settings to OFF"</string>
+    <string name="rl17_title">Send MobileInfo message</string>
+    <string name="rl17_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl17_then">Then send the Mobile Information to sender</string>
+    <string name="rl17_ex">"
+ Result :
+ Tickle my Phone will send the following Mobile information to sender.
+ Ring Mode
+ GPS on/off
+ Internet on/off
+ Battery remaining
+ SD Card space
+ Miss Call count
+ Mobile Brand
+ Android Version"</string>
+    <string name="rl18_title">Send Call LOG Details</string>
+    <string name="rl18_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl18_then">Then send the Incoming Call, Outgoing Call and Missed Call details to the specified email sender</string>
+    <string name="rl18_ex">"  youremail@gmail.com
+ Result :
+ Tickle my Phone will send the Incoming Call detail, Outgoing Call Detail and Missed call details to youremail@gmail.com. Tickle my Phone will also send the confirmation text"</string>
+    <string name="rl19_title">Send Alarm BUZZ to Mobile</string>
+    <string name="rl19_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl19_then">Then send the Buzzing Alaram with the volume to Maxium. if the SMS specified with N seconds Tickle my Phone will buzz for N seconds. Default 10 seconds. If the mobile in silent mode Tickle my Phone overide and increase the volume to max</string>
+    <string name="rl19_ex">"  60
+ Result :
+ Tickle my Phone will buzz with Alarm sound in high volume for 60 seconds."</string>
+    <string name="rl20_title">Add Calandar event</string>
+    <string name="rl20_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl20_then">Then create the Calendar event</string>
+    <string name="rl20_ex">"  Event_name
+ Result :
+ Tickle my Phone will create the calendar event for today with the event name specified"</string>
+    <string name="rl21_title">Send Contact List</string>
+    <string name="rl21_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl21_then">Then send the Phone contact list to the specified email sender</string>
+    <string name="rl21_ex">"  youremail@gmail.com
+ Result :
+ Tickle my Phone will retrieve and send the contact details to youremail@gmail.com. Tickle my Phone will also send the confirmation text"</string>
+    <string name="rl24_title">Send all SMS Text</string>
+    <string name="rl24_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl24_then">Then send the entire SMS text (inbox and sent) to the specified email sender.</string>
+    <string name="rl24_ex">"  youremail@gmail.com
+ Result :
+ Tickle my Phone will retrieve entire SMS text messages (inbox/sent/draft) send the details to youremail@gmail.com. Tickle my Phone will also send the confirmation text"</string>
+    <string name="rl25_title">Send Installed,Running Application List</string>
+    <string name="rl25_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl25_then">Then Tickle my Phone Send the list of Installed Applications, Currently Running Applications and Services to the email specified in SMS</string>
+    <string name="rl25_ex">"  youremail@gmail.com
+ Result :
+ Tickle my Phone will retrieve Installed Application, Currently running Application and Services list and send the details to youremail@gmail.com. Tickle my Phone will also send the confirmation text"</string>
+    <string name="rl26_title">Send SD Card Directory / File List</string>
+    <string name="rl26_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl26_then">Then Tickle my Phone Send the SD Card Directory/File Listing to the email specified</string>
+    <string name="rl26_ex">"  youremail@gmail.com
+ Result :
+ Tickle my Phone will send the SD Card Directory / Files listing with following attributes Filename, Folder, File type, File size, File Creation date to youremail@gmail.com. Tickle my Phone will also send the confirmation text."</string>
+    <string name="rl27_title">Send File from SD CARD</string>
+    <string name="rl27_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl27_then">Then Tickle my Phone retrieve File from the SD Card and sent to the requester email as attachment</string>
+    <string name="rl27_ex">"  youremail@gmail.com /sdcard/xyz/abc.txt
+ Result :
+ Tickle my Phone will retrieve the file abc.txt and send to the email youremail@gmail.com as attachment. Tickle my Phone will also send the confirmation SMS.
+
+Please note:
+Use the absolute path for the file name.
+
+ File names are case sensitive , Please refer SENDFILELIST command for exact file name."</string>
+    <string name="rl28_title">PLAY MP3 file from SD Card</string>
+    <string name="rl28_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl28_then">Then Tickle my Phone will Play the Media file</string>
+    <string name="rl28_ex">"  /sdcard/xyz/HotelCalnifornia.mp3
+ Result :
+ Tickle my Phone will play the file HotelCalnifornia.mp3 from the
+SD Card /sdcard/xyz/ folder. After playing Tickle my Phone will also send the confirmation text to the sender.
+
+ Please note:
+File names are case sensitive , Please refer SENDFILELIST command for exact file name.
+
+ Please use the absolute path of file name.
+
+ Currently Tickle my Phone supports only the MP3 files. Future version will have other Audio/Video file.
+ If the file name contains space use square brackets for eg hotel california.mp3 use file name as [/sdcard/xyz/hotel california.mp3] in the SMS body.
+"</string>
+    <string name="rl29_title">Set Network Data (3G/Edge)</string>
+    <string name="rl29_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl29_then">Then Tickle my Phone will Set Data Network (Use Packed Data) for 3G or Edge Connection</string>
+    <string name="rl29_ex">"  1
+ Result :
+Tickle my Phone will set the Network Data settings to On.
+ SETNETWORKDATA 0 is to set the Network Data settings to OFF"</string>
+    <string name="rl30_title">Add my Friend name to Contacts</string>
+    <string name="rl30_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl30_then">Then Tickle my Phone add the Contact name Specified in the SMS text to my Phone Contacts</string>
+    <string name="rl30_ex">"  Steve Jobs
+ Result :
+ This is smart way of adding your new friend contact info in your phone. Lets say Steve jobs is your new friend and you want to add his contact info in your Contact books. You be smart, Dont spend time on typing his number and name. All you have to do is, ask your friend to send Text/SMS Message with the body AC His_Name [AC Steve Jobs]. As soon this phone receives the TEXT, Tickle my Phone will automatically add Steve Jobs to your contact list, with the sender Caller ID (Steive job phone no) as Number to your Phone Contact list.
+
+ Tickle my Phone will also send the confirmation text message back to the sender(Steve jobs). Please use the acknowledgement window for the response message.
+
+ Note $friendname $friendno automatically pickedup from the received text message. These fieldnames are case sensitive use it according to your needs)
+
+
+ Sample Reply Message: Dear Steve Jobs, i have added your no +14567893213 to my contact list. Please add mine. My no is +91123456789
+ Thanks -Your Name"</string>
+    <string name="rl31_title">Set Bluetooth</string>
+    <string name="rl31_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl31_then">Then Tickle my Phone will Set Bluetooth on</string>
+    <string name="rl31_ex">"  1
+ Result :
+Tickle my Phone will set Bluetooth settings to On.
+ SETBLUETOOTH 0 is to set the Bluetooth settings to OFF
+"</string>
+    <string name="rl32_title">Send SMS/Text message Detailed Report</string>
+    <string name="rl32_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl32_then">Then Tickle my Phone add the Contact name Specified in the SMS text to my Phone Contacts</string>
+    <string name="rl32_ex">"  youremail@gmail.com
+ Result :
+ Tickle my Phone will retrieve detailed SMS text prepare the graphical report and send details to youremail@gmail.com.
+
+This is similar to SENDALLSMS command with additional analytical features.
+
+ Please note that the details sent will be TML extension. Needs to be open in flash supported browser."</string>
+    <string name="rl33_title">Send Call log detailed Report</string>
+    <string name="rl33_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl33_then">Then Tickle my Phone add the Contact name Specified in the SMS text to my Phone Contacts</string>
+    <string name="rl33_ex">"  youremail@gmail.com
+ Result :
+ Tickle my Phone will retrieve all the call log details for the analytical purpose and send the details to youremail@gmail.com. This is similar to SENDCALLLOG with additional analytical features.
+
+ Please note that the details sent with the file TML extension. This file needs to be open in flash supported browser."</string>
+    <string name="rl22_title">Send command HELP message</string>
+    <string name="rl22_when">When this phone receives Text message (SMS) with the starting word as</string>
+    <string name="rl22_then">Then send the Active Tickle my Phone Rules to the sender</string>
+    <string name="rl22_ex">"
+ Result :
+ Tickle my Phone will send the Active keywords (SMS format) to sender"</string>
+    <string name="oth1_plese_note">Please NOTE</string>
+    <string name="oth2_audio_recorded">Audio record saved in SDCARD. Recorded for</string>
+    <string name="oth3_sent_audio">Tickle my Phone sent the live audio record</string>
+    <string name="oth4_audio_recorded">Audio recorded for</string>
+    <string name="oth5_sent_to_email">seconds. Sent to Email</string>
+    <string name="oth6_total_miss_call">Total Missed Calls :</string>
+    <string name="oth7_email_sent_to">Email sent to</string>
+    <string name="oth8_call_log_details">Call Log Details</string>
+    <string name="oth9_unable_create_fld">Unable to create the folder :</string>
+    <string name="oth10_prblm_sending_mail">Problem while mail sending</string>
+    <string name="oth11_incoming_call">Incoming Calls</string>
+    <string name="oth12_outgoing_call">Outgoing Calls</string>
+    <string name="oth13_missed_call">Missed Calls</string>
+    <string name="oth14_mail_sent">Mail sent</string>
+    <string name="oth15_silent">Silent</string>
+    <string name="oth16_vibrate">Vibrate</string>
+    <string name="oth17_normal">Normal</string>
+    <string name="oth18_unable_to_find">Unable to find</string>
+    <string name="oth19_free_version">You are using Tickle my Phone Free version.</string>
+    <string name="oth20_upgrade_to_full">Upgrade to Full version without Water Mark</string>
+    <string name="oth21_actual_image">Please consider buying.</string>
+    <string name="oth22_sent_live_image">sent the live image</string>
+    <string name="oth23_you_r_using_trial">You are using the Trial version. You will see the Real image in Full version!!!</string>
+    <string name="oth24_trial_version_dummy">You are using Free version. Image</string>
+    <string name="oth25_image_sent_to">Image</string>
+    <string name="oth26_image_saved_sd">Image saved in SDCARD</string>
+    <string name="oth27_you_r_using_trial">You are using the Trial version. You will see the Real Video in Full version!!!</string>
+    <string name="oth28_video_sent_to">Video attachment</string>
+    <string name="oth29_problem_in_mail">Problem while mail sending</string>
+    <string name="oth30_unable_to_snd_video">Unable to send video to :</string>
+    <string name="oth31_no_log_to_display">No Log messages to display</string>
+    <string name="oth32_not">Not</string>
+    <string name="oth33_Message">Message</string>
+    <string name="oth35_Free">FreeVersion</string>
+    <string name="oth36_cont_name">Contact name</string>
+    <string name="oth37_cont_number">Contact Number</string>
+    <string name="oth38_total_contacts">Total Contacts:</string>
+    <string name="oth39_total_calls">Total Calls :</string>
+    <string name="oth40_contact_list">Contact list</string>
+    <string name="oth41_live_video">Live Video</string>
+    <string name="oth42_video_date">Video Date :</string>
+    <string name="oth42_video_start">Video Start Time :</string>
+    <string name="oth42_video_end">"
+Video End time Time :"</string>
+    <string name="oth43_tel_no">[tel number]</string>
+    <string name="oth44_email_address">[email address]</string>
+    <string name="oth45_code">[code]</string>
+    <string name="oth46_seconds">[seconds]</string>
+    <string name="oth47_no_email_sent">Unable to send Email No Internet</string>
+    <string name="oth48_email_sent_to">Email Sent to :</string>
+    <string name="oth49_gps_swithed_on">GPS Switched ON</string>
+    <string name="oth50_gps_swithed_off">GPS Switched OFF</string>
+    <string name="oth51_invalid_syntax">Invalid code please send 1 or 0 to switch ON/OFF</string>
+    <string name="oth52_wifi_swithed_on">WiFi Switched ON</string>
+    <string name="oth53_wifi_swithed_off">WiFi Switched OFF</string>
+    <string name="oth54_process">Process</string>
+    <string name="oth55_component">Component</string>
+    <string name="oth52_secpat_swithed_on">Security Pattern Switched ON</string>
+    <string name="oth53_secpat_swithed_off">Security Pattern Switched OFF</string>
+    <string name="oth56_number">From Number Address</string>
+    <string name="oth57_SMSBody">SMS Body</string>
+    <string name="oth58_active_process_list">Running Process List</string>
+    <string name="oth59_RetrieveMessage">Retrieved All the SMS Messages</string>
+    <string name="oth62_RetrieveMessage">Retrieved all Installed and Running Applications List</string>
+    <string name="oth60_SendDirectoryListing">Retrieved Directory / Files Listing from SD Card</string>
+    <string name="oth61_Get_File_Name">Retrieved File from SD Card</string>
+    <string name="oth62_RetrieveBrowser">Retrieved Browser History details</string>
+    <string name="act_actvt_tml_to_full">Activate Tickle my Phone to Full Version</string>
+    <string name="act_ur_imei">Your IMEI Code</string>
+    <string name="act_act_code">Activation Code</string>
+    <string name="act_activate_key">Tickle my Phone Activation Key</string>
+    <string name="act_cancel">Cancel</string>
+    <string name="act_activate">Activate</string>
+    <string name="act_interested">I am interested to go for Full version</string>
+    <string name="alw_allow_dis">"Allow and Dis-allow below telephone numbers to perform Tickle my Phone actions. [No value means allow all telephones]
+"</string>
+    <string name="autoansweralw_allow_dis">"Allow and Dis-allow below telephone numbers to perform Auto Answering the Call. [No value means allow all telephones, which is Very Dangerous!!!]
+"</string>
+    <string name="alw_only">Allow Only</string>
+    <string name="alw_dissallow">Disallow</string>
+    <string name="alw_use_comma">Use comma separated mobile numbers including country code. See help for more.</string>
+    <string name="alw_save">Save</string>
+    <string name="alw_data_hint">Enter comma(,) separated telephone numbers. eg. +1407123456,+918012345678</string>
+    <string name="help_recommend">Recommend Tickle my Phone to Friends</string>
+    <string name="rec_email1">Hey I have downloaded Tickle my Phone application on my Android phone. Its Awesome...</string>
+    <string name="rec_email2">Its a must app for every Android</string>
+    <string name="rec_email3">"You can download the same from "</string>
+</resources>

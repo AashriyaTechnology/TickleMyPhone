@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Privacy Settings">
+		<Preference android:title="Allow / Disallow numbers" android:key="customPref" android:summary="Click here to set Allow and Disallow numbers who can send the SMS commands &gt;" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Alert for  Tickle my Phone Commands">
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Play BIG Sound" android:key="playtmlalaram" android:summary="Play BIG Alaram (2 secs) When your phone receives Tickle my Phone SMS Command" android:defaultValue="false" />
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Vibrate the phone" android:key="playvibrate" android:summary="Vibrate phone (2 secs) When your phone receive Tickle my Phone SMS Command" android:defaultValue="false" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Stealth Settings">
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Hide Tickle my Phone commands" android:key="hideincoming" android:summary="Hide Tickle my Phone commands showing in inbox and SMS Notifications. Also doesn&apos;t play the SMS notification ringtone." android:defaultValue="true" />
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Save in LOG" android:key="recordlog" android:summary="Save last 100 TMP commands in Logs.  Log Details you can see in Main Menu-&gt;Log Details" android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Set Tickle my Phone PIN (Password)">
+		<EditTextPreference android:name="Set TMP PIN" android:hint="Leave blank if you dont wish to set pin/password" android:title="Set TMP PIN/PASSWORD" android:key="settingpassword" android:summary="Set PIN for Manage Rules Setup , Autoanswer setup and Antitheft setup" android:defaultValue="" android:inputType="0x3" />
+		<EditTextPreference android:name="PIN Recovery" android:hint="your_id@youremail.com" android:title="PIN/Password Recovery" android:key="recoveryemail" android:summary="PIN Recovery email address in case if you forget" android:defaultValue="" android:inputType="0x21" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Launching Main Menu Settings">
+		<EditTextPreference android:name="Launching Settings  Dial Pad" android:title="Open Main menu by No." android:key="dialnumber" android:summary="Setup your own dial number to launch Tickle my Phone Main Menu.  Default 4455" android:defaultValue="4455" />
+		<EditTextPreference android:name="Launching Settings  SMS" android:title="Open Main menu by sms" android:key="smsmenustring" android:summary="Setup your sms String to launch Tickle my Phone Main Menu.  Default tmlmenu" android:defaultValue="tmlmenu" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Other Settings">
+		<ListPreference android:entries="resourceId:0x7f070001" android:title="Delay TMP Commands" android:key="delaypref" android:summary="Delays  Tickle my Phone commands to execute after receiving SMS" android:defaultValue="0" android:entryValues="resourceId:0x7f070002" />
+		<ListPreference android:entries="resourceId:0x7f070003" android:title="Audio Rec. Duration" android:key="audiotime" android:summary="Change Audio record Duration, Default 30 seconds " android:defaultValue="30" android:entryValues="resourceId:0x7f070004" />
+		<ListPreference android:entries="resourceId:0x7f070005" android:title="Video Rec. Duration" android:key="videotime" android:summary="Change Video record Duration, Default 30 seconds " android:defaultValue="30" android:entryValues="resourceId:0x7f070006" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Sender email id Details">
+		<Preference android:title="Read Me" android:key="infoaboutSenderEmail" android:summary="What is Sender email id? Click here to know more" />
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Use user defined Email id for  sender" android:key="enableuseremail" android:summary="TMP sends automatic email when SMS requested for SENDPHOTO, SENDSSMS,SENDCALLLOG etc. Enable this option if you like to provide your email details instead of TMP internal id" android:defaultValue="false" />
+		<EditTextPreference android:name="Your email id" android:hint="your_id@youremail.com" android:title="Sender email id" android:key="useremailid" android:summary="Enter your email id. Which will be used for  sender id" android:dependency="enableuseremail" android:defaultValue="" android:inputType="0x21" />
+		<EditTextPreference android:name="Password" android:hint="enter your email password" android:password="true" android:title="Password" android:key="useremailpassword" android:summary="Enter your email Password " android:dependency="enableuseremail" android:defaultValue="" />
+	</PreferenceCategory>
+</PreferenceScreen>

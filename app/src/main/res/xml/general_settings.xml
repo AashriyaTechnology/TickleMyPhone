@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Show message">
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Show POP out Message" android:key="showmessagestolen" android:summary="Show the message as soon as culprit change the SIM and switch on the Phone." android:defaultValue="false" />
+		<Preference android:title="Configure POP up Message" android:key="configpop" android:summary="Click here to configure the POP up message to Culprit&gt;" />
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Play BIG Alaram " android:key="bigalaramstolen" android:summary="Play Big Buzzing sound for 20 seconds when the culprit change the SIM and switch it on" android:defaultValue="false" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Advance Settings">
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Send SMS text message to your alternative no(s)" android:key="sendsmswhenstolen" android:summary="Send SMS
+
+Sample SMS: You phone currently with unknown person and his/her 
+Contact no is :+XXXXXXXX
+SIM Srl no : XXXXXXXXXXXX
+Service Provider:XXXXXX
+Country : XX
+Now you can contact culprit  or send Tickle my Phone commands" android:defaultValue="true" />
+		<com.jalsalabs.ticklemyphonefull.LongSummaryCheckBoxPreference android:title="Send Email to your email id" android:key="sendemailwhenstolen" android:summary="Send Email
+
+Email will contain your Lost phone&apos;s Geo location, Complete call log details and other Phone profile informations" android:defaultValue="true" />
+	</PreferenceCategory>
+</PreferenceScreen>

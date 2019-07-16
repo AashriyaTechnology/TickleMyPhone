@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:background="@drawable/radialback" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:textSize="20.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txtSize2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:height="20.0dip" />
+		<TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/AppTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\nTickle my Phone xxx" />
+		<TextView android:textSize="20.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txtSize2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+		<Button android:layout_gravity="center" android:id="@id/IVSMSRules" android:background="@drawable/buttonred" android:layout_height="wrap_content" android:text="Manage SMS/Text message Rules" style="@style/ButtonText" />
+		<Button android:layout_gravity="center" android:id="@id/IVAutoAnswer" android:background="@drawable/buttonred" android:layout_height="wrap_content" android:text="Automatic Answering calls settings" style="@style/ButtonText" />
+		<Button android:layout_gravity="center" android:id="@id/IVSIMChangeAlert" android:background="@drawable/buttonred" android:layout_height="wrap_content" android:text="Antitheft / SIM Change alert Settings" style="@style/ButtonText" />
+		<Button android:layout_gravity="center" android:id="@id/IVMonitor" android:background="@drawable/buttonred" android:layout_height="wrap_content" android:text="@string/MM_LOG_Details" style="@style/ButtonText" />
+		<Button android:layout_gravity="center" android:id="@id/IVHelp" android:background="@drawable/buttonred" android:layout_height="wrap_content" android:text="Help" style="@style/ButtonText" />
+		<Button android:layout_gravity="center" android:id="@id/IVRate" android:background="@drawable/buttonred" android:layout_height="wrap_content" android:text="@string/MM_Rate" style="@style/ButtonText" />
+		<Button android:layout_gravity="center" android:id="@id/IVIconvisibility" android:background="@drawable/buttonred" android:layout_height="wrap_content" android:src="@color/darkbrown" android:text="Your APP icon is VISIBLE" style="@style/ButtonText" />
+		<Button android:layout_gravity="center" android:id="@id/IVExit" android:background="@drawable/buttonred" android:layout_height="wrap_content" android:src="@color/darkbrown" android:text="@string/MM_Exit" style="@style/ButtonText" />
+		<TextView android:textSize="15.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txtSize2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:height="15.0dip" />
+		<TextView android:textSize="11.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txtSize2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copyright(c) 2010-12 Jalsa Labs. All rights reserved." android:height="20.0dip" />
+	</LinearLayout>
+</ScrollView>

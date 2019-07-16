@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent">"\u0009>
+"		<TextView android:textSize="20.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your alternative contact when this phone is Lost or Stolen" android:height="50.0dip" />
+		<TextView android:id="@id/smallgap" android:text="" android:height="30.0px" />
+		<TableRow android:id="@id/TableRow00">
+			<TextView android:textColor="@color/white" android:id="@id/TextView01" android:layout_column="1" android:text="Alternative no 1" />
+			<EditText android:id="@id/alternativeno1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="eg. +140712345678" android:width="210.0dip" android:inputType="phone" />
+		</TableRow>
+		<TableRow android:id="@id/TableRow00">
+			<TextView android:textColor="@color/white" android:id="@id/TextView01" android:layout_column="1" android:text="Alternative no 2" />
+			<EditText android:id="@id/alternativeno2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="eg. +919876543210" android:width="210.0dip" android:inputType="phone" />
+		</TableRow>
+		<TableRow android:id="@id/TableRow00">
+			<TextView android:textColor="@color/white" android:id="@id/TextView01" android:layout_column="1" android:text="Email id" />
+			<EditText android:id="@id/alternativeemail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="your_id@youremail.com" android:inputType="textEmailAddress">
+				<requestFocus />
+			</EditText>
+		</TableRow>
+		<TextView android:id="@id/smallgap" android:text="" android:height="30.0px" />
+		<Button android:id="@id/updatecontacts" android:background="@drawable/buttonyellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update" style="@style/ButtonText" />
+		<TextView android:textColor="@color/white" android:id="@id/TextView01" android:layout_column="1" android:text="PLEASE NOTE: \nEnter alternative number along with country code. eg. +919876543210 \n\nDo NOT give alternative phone number as your current no (This phone).  Give your Spouse or your Friend no.  " />
+	</TableLayout>
+</ScrollView>

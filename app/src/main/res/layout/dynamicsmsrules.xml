@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:textSize="15.0sp" android:id="@id/bigblankline" android:text="" />
+"
+//-----------------------------------------CALLMEBACK  Settings Starts------------------------------------------------------------- "			<TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/Title" android:background="@color/darkbrown" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Title text should come here" android:width="320.0dip" android:layout_below="@id/buttons_layout" />
+			<TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/StartActiontext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="When recive message should come here.... " />
+			<EditText android:id="@id/ET_KeyWord" android:height="20.0px" android:width="200.0px" android:singleLine="true" />
+			<TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/acklabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Acknowledgement" />
+			<EditText android:id="@id/ET_SMSReplyText" android:height="200.0px" android:width="200.0px" android:singleLine="false" />
+			<TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/actiontext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Then should come here" />
+			<ToggleButton android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/toggleaction" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="toggle" />
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<Button android:gravity="center" android:id="@id/save" android:background="@drawable/buttongreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alw_save" android:layout_weight="0.5" style="@style/ButtonText" />
+				<Button android:gravity="center" android:id="@id/cancel" android:background="@drawable/buttonred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MM_Close" android:layout_weight="0.5" style="@style/ButtonText" />
+			</LinearLayout>
+			<TextView android:textSize="15.0sp" android:textColor="@color/lightgreen" android:id="@id/exampletext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Example text should come here" />
+		</TableLayout>
+	</ScrollView>
+</LinearLayout>

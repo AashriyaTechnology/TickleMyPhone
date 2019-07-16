@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/darkbrown" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:textSize="20.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tickle my Phone Self service" android:height="50.0dip" />
+		<TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/steptext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+		<Button android:layout_gravity="center" android:id="@id/diagnosis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Diagnosis" android:width="310.0px" />
+		<TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/diagtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[Diagnosis data empty.  Please press Diagnosis button (above) to refresh data ]" />
+		<TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/ifdoesnot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\n\nIf the above steps doesn't work.  Please contact the developer by pressing the below button.\n\n" />
+		<Button android:layout_gravity="center" android:id="@id/contact_developer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send Diagnosis to Tickle my Phone Team" android:width="310.0px" />
+		<TextView android:textSize="11.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txtSize2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copyright(c) 2010-12 Jalsa Labs. All rights reserved." android:height="20.0dip" />
+	</LinearLayout>
+</ScrollView>
